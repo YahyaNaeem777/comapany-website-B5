@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root{
+    --brand-color: #b6230f;
+}
+
+body{
+    font-family: 'Oxygen',sans-serif;
+    line-height: 1.7;
+}
+img{
+    width: 100%;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    font-weight: 500;
+}
+
+/* .bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+} */
+
+/* Brand NavBar */
+
+.brand_nav{
+    background-color: var(--brand-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.brand_nav p{
+    margin-bottom: 0%;
+    display: inline-block;
+    margin-right: 2rem;
+    color: #fff;
+}
+
+.brand_nav i,
+.brand_nav span{
+    vertical-align: middle;
+}
+.social_links a{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.329);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+   border-radius: 50%;    
+}
+
+.social_links a:hover{
+    color: white;
+    background-color: black;
+
+}
+
+
+/* Menu Navbar */
+
+.navbar{
+    box-shadow: 0px 10px 40px rgba(65, 4, 4, 0.202);
+    background-color: white;
+    
+}
+
+.navbar a{
+    font-weight: 500 !important;
+    font-size: 19px !important;
+    transition: all 0.5s ease;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color: var(--brand-color) !important;
+    
+}
+
+.navbar .navbar-brand{
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    /* color: aquamarine; */
+}
+.navbar-brand span{
+    /* font-weight: 600; */
+    font-size: 40px;
+    color: var(--brand-color)
+}
+
+.btn{
+    padding: 8px 20px;
+    font-weight: 500;
+}
+
+.contactBtn{
+    background-color: var(--brand-color);
+    color: #fff !important;
+}
+.contactBtn:hover{
+    background-color: #7c1b0e;
+    box-shadow: 5px 10px 30px #7c1b0e6c;
+}
+
+/* SLIDER */
+
+.slide1{
+    background: linear-gradient(#04414d,#0a53be);
+    /* background: url('/images/slide4.jpg'); */
+    /* background-size: cover !important;
+    background-position: center !important;
+     */
+   
+}
+
+.btn-brand{
+    background-color: var(--brand-color);
+    color: white !important;
+    padding: 8px 20px;
+}
+
+.btn-brand:hover{
+    box-shadow: 5px 10px 30px #7c1b0e6c;
+}
