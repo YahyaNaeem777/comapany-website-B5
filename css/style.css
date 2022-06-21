@@ -254,8 +254,10 @@ a{
 
 .services .serviceProvide .card .card-body h5 {
     text-align: center;
+    color: var(--brand-color);
 }
 
 .services .serviceProvide .card .card-body p {
     text-align: center;
+    font-size: 16px;
 }
