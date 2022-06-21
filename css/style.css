@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
-
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 :root{
     --brand-color: #b6230f;
 }
@@ -19,10 +23,10 @@ a{
     font-weight: 500;
 }
 
-/* .bg-cover{
+.bg-cover {
     background-position: center !important;
     background-size: cover !important;
-} */
+}
 
 /* Brand NavBar */
 
@@ -72,12 +76,16 @@ a{
     font-size: 19px !important;
     transition: all 0.5s ease;
 }
+
 .navbar .navbar-nav .nav-item .nav-link:hover,
 .navbar .navbar-nav .nav-item .nav-link.active{
     color: var(--brand-color) !important;
-    
+    font-size: 6rem;
 }
 
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    /* font-weight: 800; */
+}
 .navbar .navbar-brand{
     font-weight: 700 !important;
     font-size: 28px !important;
@@ -105,8 +113,14 @@ a{
 
 /* SLIDER */
 
+.slider-wrapper {
+    background: linear-gradient(#1f4ca577, #1f4ca577), url('../images/background.jpg');
+    /* background-position: center;
+    background-size: cover; */
+    background-attachment: fixed;
+}
 .slide1{
-    background: linear-gradient(#0a6375, #2b5eac);
+    /* background: linear-gradient(#0a6375, #2b5eac); */
     /* background: url('/images/slide4.jpg'); */
     /* background-size: cover !important;
     background-position: center !important;
@@ -114,6 +128,9 @@ a{
    
 }
 
+.slider-wrapper .btn {
+    font-weight: bold;
+}
 .btn-brand{
     background-color: var(--brand-color);
     color: white !important;
@@ -132,10 +149,53 @@ a{
 }
 
 .aboutInfo .aboutContents div img {
-    width: 7rem;
+        width: 7.5rem;
+            border-radius: 50%;
+            /* color: var(--brand-color); */
 }
 
 .aboutImage {
     border-radius: 30px 30px;
-    box-shadow: 5px 10px 30px #7c1b0e6c;
-}
+    box-shadow: 0px 20px 30px #1b2b6d78;
+    }
+    
+    .aboutSection div h2 {
+        color: var(--brand-color);
+    }
+    
+    .aboutSection div p {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .milestone {
+        background: linear-gradient(#1f4ca577, #1f4ca577), url('../images/bg6.jpg');
+        /* background-attachment: fixed; */
+        min-height: 20rem;
+        /* background-repeat: no-repeat !important; */
+        /* background-size: cover !important;
+                                            background-position: center; */
+        /* color: white; */
+        display: flex;
+        align-items: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 10rem 0;
+    }
+    
+    .milestone h2 {
+        color: whitesmoke;
+    }
+    
+    .milestone p {
+        color: var(--brand-color);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+    
+    .milestoneInfo {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 30px 30px;
+        box-sizing: border-box;
+        margin-top: 2px;
+        align-items: center;
+        /* margin: 2px; */
+    }
