@@ -267,12 +267,34 @@ a{
     height: 28rem !important;
 }
 
-.portfolio .owl-carousel div .overlay {
-    width: 100%;
+.portfolio .owl-carousel div .project {
+    position: relative;
+}
+
+.portfolio .owl-carousel div .project .overlay {
+    background: linear-gradient(to bottom, #0776e560, #11bad44a);
     height: 200px;
+    width: 100%;
     position: absolute;
     left: 0;
-    bottom: 5rem;
     color: #fff;
-    background: linear-gradient(to top, #0d06052a, #0b1e2162);
+    bottom: 0.1rem;
+    }
+    
+    .portfolio .owl-carousel div .project .overlay .overlayInfo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 40px;
+        /* color: #fff; */
+    }
+    
+    .project .overlay .overlayInfo h4::before {
+        content: '';
+        height: 3px;
+        width: 3rem;
+        background-color: var(--brand-color);
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
 }
